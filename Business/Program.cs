@@ -15,6 +15,10 @@ namespace Business
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Gathers information regarding the employee's Date of Birth.
+        /// </summary>
+        /// <param name="employee">The employee whose date of birth we are gathering information for.</param>
         public static void EmployeeDOBEntry(Models.Employee employee) //Function should be capital
         {
             employee.DOB = new System.DateTime();
@@ -80,9 +84,6 @@ namespace Business
                 }
             }
             while (!samePassword); //Do this while they're not the same password
-
-
-            
         }
         private static string GetHiddenConsoleInput()
         {

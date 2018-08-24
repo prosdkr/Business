@@ -14,8 +14,6 @@ namespace Business.Models
 
         public Guid EmployeeGuid { get; } = Guid.NewGuid();
 
-
-
         public String Username { get; set; }
 
         public String UserPassword { get; set; }
