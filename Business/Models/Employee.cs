@@ -6,7 +6,9 @@ namespace Business.Models
 {
     class Employee
     {
-        public String FirstName { get; set; }
+        private String firstName; 
+
+        public String FirstName { get { return firstName; } set { firstName = value; } }
 
         public String LastName { get; set; }
 
@@ -18,5 +20,6 @@ namespace Business.Models
 
         public String UserPassword { get; set; }
 
+        public int Role { get; set; }
     }
 }
